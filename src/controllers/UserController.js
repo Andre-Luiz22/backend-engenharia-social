@@ -1,5 +1,5 @@
-import { user } from "../models/userModel.js";
 import bcrypt from "bcrypt";
+import { user } from "../models/userModel.js";
 
 const saltRounds = Math.floor(Math.random() * (16 - 10 + 1)) + 10;
 const salt = bcrypt.genSaltSync(saltRounds);

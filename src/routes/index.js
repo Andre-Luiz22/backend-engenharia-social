@@ -1,5 +1,5 @@
-import { router } from "./userRoutes.js";
 import express from "express";
+import { router } from "./userRoutes.js";
 
 export const routes = (app) => {
   app.route("/").get((req, res) => {
