@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 const saltRounds = Math.floor(Math.random() * (16 - 10 + 1)) + 10;
 const salt = bcrypt.genSaltSync(saltRounds);
 
-export class UserController {
+class UserController {
   static getAllUsers = async (req, res) => {
     try {
       const allUsers = await user.find();
@@ -37,3 +37,5 @@ export class UserController {
     }
   };
 }
+
+export default UserController
